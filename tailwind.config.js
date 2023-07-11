@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -23,13 +23,11 @@ module.exports = {
       },
     },
     screens: {
-      xxs: "290px",
-      xs: "480px",
-      ss: "620px",
-      sm: "768px",
-      md: "1060px",
-      lg: "1200px",
-      xl: "1700px",
+      'xl': {'max': '1200px'},
+      'lg': {'max': '991px'},
+      'md': {'max': '767px'},
+      'sm': {'max': '550px'},
+      'xsm': {'max': '375px'},
     },
   },
   plugins: [],
