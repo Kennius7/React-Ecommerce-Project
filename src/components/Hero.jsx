@@ -30,8 +30,8 @@ const Hero = ({ heroapi: { title, subtitle, btntext, videos, sociallinks, img } 
                 {subtitle}
             </h1>
 
-            <button type='button' className='button-theme bg-slate-200 shadow-slate-200 
-                rounded-xl my-5'>
+            <button type='button' 
+              className='button-theme bg-slate-200 shadow-slate-200 rounded-xl my-5'>
                 {btntext}
             </button>
 

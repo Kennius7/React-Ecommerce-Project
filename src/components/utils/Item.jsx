@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 import { useDispatch } from "react-redux";
 
 import { StarIcon, ShoppingBagIcon } from "@heroicons/react/24/solid";
@@ -17,6 +17,7 @@ const Item = ({
   price,
 }) => {
   //   console.log(id)
+  
   const dispatch = useDispatch();
 
   const onAddToCart = () => {
