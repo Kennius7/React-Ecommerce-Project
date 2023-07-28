@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { selectTotalQTY, setOpenCart } from '../app/CartSlice.js';
 
 import { HeartIcon, MagnifyingGlassIcon, ShoppingBagIcon } from '@heroicons/react/24/outline'
-import logo from '../assets/logo.png';
+import logo from '../assets/JudyHub Logo1.png';
 
 const Navbar = () => {
     const [navState, setNavState] = useState(false);
@@ -38,12 +38,20 @@ return (
             : 'fixed top-0 left-0 right-0 h-[9vh] flex items-center justify-center opacity-100 z-[200] blur-effect-theme'
       }>
         <nav className='flex items-center justify-between nike-container'>
-            <div className='flex items-center'>
+            <div className='flex justify-between items-center'>
                 <img
                     src={logo}
                     alt="logo/img"
-                    className={`w-16 h-auto ${navState && "filter brightness-0"}`}
+                    className={`w-16 h-auto ${navState && "filter brightness-1"}`}
                 />
+                <div className="flex flex-col justify-center items-center ml-4">
+                    <div className="text-slate-800 font-poppins text-[25px] font-semibold">
+                        Judy&apos;s Hub
+                    </div>
+                    <div className="text-slate-800 font-poppins text-[15px] font-semibold -mt-2">
+                        Beyoutiful
+                    </div>
+                </div>
             </div>
             <ul className='flex items-center justify-center gap-2'>
 
