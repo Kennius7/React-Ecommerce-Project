@@ -34,35 +34,40 @@ const Navbar = () => {
 return (
    <>
       <header className={!navState 
-            ? 'absolute top-7 left-0 right-0 opacity-100 z-50' 
-            : 'fixed top-0 left-0 right-0 h-[9vh] flex items-center justify-center opacity-100 z-[200] blur-effect-theme'
+            ? 'absolute top-2 left-0 right-0 z-50 duration-1000' 
+            : 'fixed top-0 left-0 right-0 h-[9vh] flex items-center justify-center z-[200] blur-effect-theme duration-1000'
       }>
-        <nav className='flex items-center justify-between nike-container'>
+        <nav className='w-full flex items-center justify-between px-3 py-2'>
+
             <div className='flex justify-between items-center'>
                 <img
                     src={logo}
                     alt="logo/img"
-                    className={`w-16 h-auto ${navState && "filter brightness-1"}`}
+                    className={`xs:w-16 w-12 h-auto ${navState && "filter brightness-1"}`}
                 />
-                <div className="flex flex-col justify-center items-center ml-4">
-                    <div className="text-slate-800 font-poppins text-[25px] font-semibold">
+                <div className="flex flex-col justify-center xs:items-center items-start xs:ml-4 ml-2">
+                    <div className={`${navState ? "text-[#270404]" : "text-white title-text-shadow2"} 
+                        font-poppins xs:text-[25px] text-[20px] font-semibold text-start`}>
                         Judy&apos;s Hub
                     </div>
-                    <div className="text-slate-800 font-poppins text-[15px] font-semibold -mt-2">
+                    <div className={`${navState ? "text-[#270404]" : "text-white title-text-shadow1"} 
+                        font-poppins xs:text-[15px] text-[13px] font-semibold xs:tracking-normal tracking-wider 
+                        text-start xs:-mt-2 -mt-1 xs:ml-0 ml-1`}>
                         Beyoutiful
                     </div>
                 </div>
             </div>
-            <ul className='flex items-center justify-center gap-2'>
+
+            <ul className='flex items-center justify-center gap-3'>
 
                 <li className='grid items-center'>
                     <MagnifyingGlassIcon className={`icon-style 
-                        ${navState && "text-slate-900 transition-all duration-300"}`} />
+                        ${navState && "text-[#270404] transition-all duration-300"}`} />
                 </li>
 
                 <li className='grid items-center'>
                     <HeartIcon className={`icon-style 
-                        ${navState && "text-slate-900 transition-all duration-300"}`} />
+                        ${navState && "text-[#270404] transition-all duration-300"}`} />
                 </li>
 
                 <li className='grid items-center'>
@@ -71,14 +76,15 @@ return (
 
                         <ShoppingBagIcon 
                             className={`icon-style 
-                                ${navState && "text-slate-900 transition-all duration-300"}`} />
+                                ${navState && "text-[#270404] transition-all duration-300"}`} />
 
-                        <div className={`absolute top-4 right-0 shadow w-4 h-4 text-[0.65rem] leading-tight 
+                        <div className={`absolute top-4 right-0 shadow sm:w-5 sm:h-5 w-4 h-4 
+                            text-[10px] leading-tight text-center
                             font-medium rounded-full flex items-center justify-center cursor-pointer 
                             hover:scale-110 transition-all duration-300 
                             ${navState 
-                            ? 'bg-slate-900 text-slate-100 shadow-slate-900' 
-                            : 'bg-slate-100 text-slate-900 shadow-slate-100'}`}>{totalQTY}</div>
+                            ? 'bg-[#270404] text-slate-100 shadow-[#270404]' 
+                            : 'bg-slate-100 text-[#270404] shadow-slate-100'}`}>{totalQTY}</div>
                     </button>
                 </li>
 

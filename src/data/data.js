@@ -33,10 +33,10 @@ import youtube from "../assets/youtube.svg";
 import messenger from "../assets/messenger.svg";
 
 const heroapi = {
-  title: "Play With Electric Nike",
-  subtitle: "Adapt 2.0 Sneakers",
+  title: "Your One Stop online beauty hub",
+  subtitle: "Take advantage of our affordable products suited to your needs",
   img: heroimg,
-  btntext: "Explore Product",
+  btntext: "Search for products",
   videos: [
     { imgsrc: vcover1, clip: clip },
     { imgsrc: vcover2, clip: clip },

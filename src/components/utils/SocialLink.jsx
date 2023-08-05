@@ -1,4 +1,4 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
 
 const SocialLink = ({ icon }) => {
   return (
@@ -6,7 +6,8 @@ const SocialLink = ({ icon }) => {
       <img
         src={icon}
         alt="icon/social"
-        className="w-8 h-8 flex items-center cursor-pointer md:w-6 md:h-6 sm:w-5 sm:h-5 transition-all duration-200 hover:scale-110"
+        className="w-8 h-8 flex items-center cursor-pointer md:w-8 md:h-8 sm:w-5 sm:h-5 
+          transition-all duration-500 hover:scale-110"
       />
    </>
   )
