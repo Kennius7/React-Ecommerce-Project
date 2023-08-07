@@ -45,20 +45,21 @@ return (
                     alt="logo/img"
                     className={`xs:w-16 w-12 h-auto ${navState && "filter brightness-1"}`}
                 />
-                <div className="flex flex-col justify-center xs:items-center items-start xs:ml-4 ml-2">
-                    <div className={`${navState ? "text-[#270404]" : "text-white title-text-shadow2"} 
-                        font-poppins xs:text-[25px] text-[20px] font-semibold text-start`}>
+                <div className="flex flex-col justify-center items-start xs:ml-4 ml-2">
+                    <div className={`${navState ? "text-[#270404]" : "text-white title-text-shadow1"} 
+                        font-poppins sm:text-[25px] xs:text-[20px] xxs:text-[18px] text-[15px] font-semibold 
+                        text-start`}>
                         Judy&apos;s Hub
                     </div>
-                    <div className={`${navState ? "text-[#270404]" : "text-white title-text-shadow1"} 
-                        font-poppins xs:text-[15px] text-[13px] font-semibold xs:tracking-normal tracking-wider 
-                        text-start xs:-mt-2 -mt-1 xs:ml-0 ml-1`}>
+                    <div className={`${navState ? "text-[#270404]" : "text-white title-text-shadow2"} 
+                        font-poppins sm:text-[15px] xxs:text-[13px] text-[11px] font-semibold xs:tracking-normal tracking-wider 
+                        text-start xs:mt-0 -mt-1 xs:ml-2 ml-1`}>
                         Beyoutiful
                     </div>
                 </div>
             </div>
 
-            <ul className='flex items-center justify-center gap-3'>
+            <ul className='flex items-center justify-center xs:gap-3 xxs:gap-2 gap-1'>
 
                 <li className='grid items-center'>
                     <MagnifyingGlassIcon className={`icon-style 
@@ -78,13 +79,15 @@ return (
                             className={`icon-style 
                                 ${navState && "text-[#270404] transition-all duration-300"}`} />
 
-                        <div className={`absolute top-4 right-0 shadow sm:w-5 sm:h-5 w-4 h-4 
-                            text-[10px] leading-tight text-center
+                        <div className={`absolute xs:top-4 top-3 xs:right-0 -right-[1px] shadow sm:w-5 
+                            sm:h-5 w-4 h-4 text-[10px] leading-tight text-center
                             font-medium rounded-full flex items-center justify-center cursor-pointer 
                             hover:scale-110 transition-all duration-300 
                             ${navState 
                             ? 'bg-[#270404] text-slate-100 shadow-[#270404]' 
-                            : 'bg-slate-100 text-[#270404] shadow-slate-100'}`}>{totalQTY}</div>
+                            : 'bg-slate-100 text-[#270404] shadow-slate-100'}`}>
+                            {totalQTY}
+                        </div>
                     </button>
                 </li>
 

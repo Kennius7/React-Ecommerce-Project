@@ -6,7 +6,7 @@ const SocialLink = ({ icon }) => {
       <img
         src={icon}
         alt="icon/social"
-        className="w-8 h-8 flex items-center cursor-pointer md:w-8 md:h-8 sm:w-5 sm:h-5 
+        className="flex items-center cursor-pointer md:w-9 md:h-9 sm:w-8 sm:h-8 xs:w-6 xs:h-6 w-5 h-5
           transition-all duration-500 hover:scale-110"
       />
    </>
