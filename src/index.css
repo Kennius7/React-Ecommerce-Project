@@ -73,7 +73,7 @@
 
   /* Clip-path */
   .clip-path {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
   }  
 
   .clip-path1 {
@@ -132,7 +132,9 @@
   text-shadow: 0 0 4px #d3e0d3;
 }
 
-
+.color-sampling-css {
+  color: #011402;
+}
 
 
 

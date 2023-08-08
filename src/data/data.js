@@ -32,6 +32,10 @@ import twitter from "../assets/twitter.svg";
 import youtube from "../assets/youtube.svg";
 import messenger from "../assets/messenger.svg";
 
+
+
+
+
 const heroapi = {
   title: "Your online beauty store",
   subtitle: "Take advantage of our affordable products suited to your needs",

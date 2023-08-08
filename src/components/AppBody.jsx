@@ -8,11 +8,7 @@
 const AppBody = () => {
   return (
     <>
-      <div className="w-full h-[400px] flex justify-center items-center">
-          <div>
-              Hello World
-          </div>
-
+      <div className="w-full md:h-[260px] xs:h-[120px] h-[60px] flex justify-center items-center">
       </div>
     </>
   )

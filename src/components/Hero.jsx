@@ -13,14 +13,14 @@ const Hero = ({ heroapi: { title, subtitle, btntext, videos, sociallinks, img } 
    <>
       <div className='relative h-auto w-auto flex flex-col'>
 
-        <div className='bg-theme md:clip-path xs:clip-path1 clip-path2 md:h-[70vh] 
-          sm:h-[30vh] xs:h-[40vh] xxs:h-[38vh] h-[42vh] w-auto absolute top-0 left-0 right-0 opacity-100 z-10'>
+        <div className='bg-theme md:clip-path sm:clip-path1 xs:clip-path1 clip-path2 sm:h-[400px] 
+          xs:h-[300px] xxs:h-[280px] h-[250px] w-auto absolute top-0 left-0 right-0 opacity-100 z-10'>
         </div>
 
         <div className='relative opacity-100 z-20 grid items-center justify-items-center mt-12'>
 
           <div className='grid items-center xs:justify-items-center justify-items-start md:mt-14 
-            sm:mt-20 xs:mt-10 mt-12'>
+            sm:mt-12 xs:mt-10 mt-12'>
 
             <h1 className='w-full md:text-[40px] sm:text-[42px] xs:text-[28px] xxs:text-[20px] text-[18px]
               font-extrabold filter drop-shadow-sm text-slate-200 xs:text-center text-start

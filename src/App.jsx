@@ -1,7 +1,10 @@
 /* eslint-disable no-unused-vars */
+import { useState } from "react";
 import { Cart, FlexContent, Footer, Hero, Navbar, Sales, Stories, AppBody } from './components/Index';
 import { heroapi, popularsales, topratesales, highlight, sneaker, story, footerAPI } from './data/data.js';
 import { NavContext } from "../src/components/context/NavContext";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
 
 
 
@@ -17,8 +20,8 @@ function App () {
         title: "About Us",
     },
     {
-        id: "/team",
-        title: "Our Team",
+        id: "/products",
+        title: "Our Products",
     },
     {
         id: "/blog",
@@ -38,21 +41,28 @@ function App () {
     },
   ];
 
+  const [active, setActive] = useState("Home");
+
   return (
     // eslint-disable-next-line no-undef
     <NavContext.Provider value={{navLinks, setActive}}>
-      <Navbar/>
-      <Cart/>
-      <main className="w-full">
-        <Hero heroapi={heroapi} />
-        <AppBody/>
-        {/* <Sales endpoint={popularsales} ifExists />
-        <FlexContent endpoint={highlight} ifExists />
-        <Sales endpoint={topratesales} />
-        <FlexContent endpoint={sneaker} />
-        <Stories story={story} /> */}
-      </main>
-      <Footer footerAPI={footerAPI} />
+      <BrowserRouter>
+        <Navbar/>
+        <Cart/>
+        <main className="w-full">
+          
+            <Routes>
+              <Route path="/" element={<HomePage/>} exact />
+            </Routes>
+            {/* <Sales endpoint={popularsales} ifExists />
+            <FlexContent endpoint={highlight} ifExists />
+            <Sales endpoint={topratesales} />
+            <FlexContent endpoint={sneaker} />
+            <Stories story={story} /> */}
+          
+        </main>
+        <Footer footerAPI={footerAPI} />
+      </BrowserRouter>
     </NavContext.Provider>
   )
 }
